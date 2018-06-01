@@ -1,0 +1,49 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+   
+    
+    main section.forecast { 
+        display: inline-block;
+    }  /* show the 10-day forecast with the medium view and up */
+    nav span::before {
+        display:none;
+    }
+    nav span {
+        position: relative;
+        float: left;
+        right:auto;
+    }
+    nav span a {
+        float: left;
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    nav span ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #franklin-photo {
+        float:right;
+        width:40%;
+    }
+    #firephoto {
+        display:inline;
+        width: 40%;
+        position:absolute;
+        bottom: -100px;
+        float: right;
+    }
+    #town-article{
+        display: inline-block;
+        width:40%;
+        float: left;
+    }
+}

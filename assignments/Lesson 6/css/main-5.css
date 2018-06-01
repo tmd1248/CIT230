@@ -1,0 +1,99 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+p {
+    display: inline-block;
+}
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 95%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+header {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+
+    nav span {
+        display:inline-block;
+        float:left;
+        right:px;
+        position:relative;
+    }
+    nav ul {
+        display: none;
+        position:relative;
+        right:1px;
+    }
+    nav span {
+        width:0px;
+        height:0px;
+        border:0px;
+        background-color:white;
+        display:inline-block;
+        text-align:center;
+    }
+    nav span::before{
+        content: url(../images/threelines.png);
+        max-width: 1em;
+        max-height: 1em;
+        width:1px;
+        height:1px;
+    }
+     nav span:hover ul{
+        display:inline-block;
+    }
+    nav span:active ul{
+         display:inline-block;
+    }
+    main {
+        text-align:center;
+        background-color: white;
+    }
+    #citytitle{
+        display: block;
+        position:relative;
+        top:5px;
+        right:px;
+        text-align: center;
+    }
+    #main-image{
+        width: 5em;
+        height: 5em;
+        position:relative;    
+    }
+    #title{
+        position:relative;
+        top:10%;
+        color:cornflowerblue;
+    }
+    #motto{
+        display:inline-block;
+        width:10em;
+        position:relative;
+       top: 10%; 
+    }
+    #franklin-photo{
+        min-width:5em;
+        height:10em;
+    }
+    main section.forecast{
+        display: none;
+    }
+    #sunny-image {
+        width: 2em;
+        position:relative;
+    }
+        main figure { margin: 0 0 .2rem 2%; width:96%; }
+    #firephoto {
+        width: 300px;
+    }
+
+    footer {
+        text-align: center;
+        display:inline-block;
+        position:relative;
+        bottom: 0%;
+        width:100%;
+        color:white;
+        background-color:blue;
+    }
