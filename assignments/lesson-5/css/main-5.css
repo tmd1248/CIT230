@@ -7,8 +7,6 @@ p {
 }
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 95%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-}
-
 
     nav span {
         display:inline-block;
@@ -69,7 +67,7 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
         position:relative;
        top: 10%; 
     }
-    #cloudy-photo{
+    #franklin-photo{
         min-width:5em;
         height:10em;
     }

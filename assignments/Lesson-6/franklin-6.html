@@ -19,8 +19,8 @@
   </header>
 
   <nav>
-       <span>
-
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Franklin</a></li>
@@ -34,10 +34,14 @@
     
   <main>
     <section>
-            <h2 id="citytitle">Franklin City</h2>
+            <h2 id="citytitle"> <br> Franklin City</h2>
     </section>
     <figure>
-        <img id="franklin-photo" src="images/franklin-compressed.jpeg" alt= "Still sunny!">
+        <picture id="franklin-photo">
+        <source media="(min-width: 64em)" srcset="images/franklin-compressed.jpg">
+        <source media="(min-width: 37.5em) " srcset="images/franklin-compressed-medium.jpg">
+        <img src="images/franklin-compressed-small.jpg" alt="Still Sunny!">
+        </picture> 
     </figure>
     <section class="weather-summary">
       <h3>Weather Summary</h3>    
@@ -116,5 +120,6 @@
     </section>
   </footer>
         <script type="text/javascript" src="js/currentdate.js"></script>
+        <script type="text/javascript" src="js/hamburger.js"></script>
 </body>
 </html>

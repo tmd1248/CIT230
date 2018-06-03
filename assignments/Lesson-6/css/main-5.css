@@ -11,40 +11,42 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
 header {
     font-family: 'Bowlby One SC', cursive;
 }
-
-
+li {
+    display: inline;
+}
     nav span {
-        display:inline-block;
-        float:left;
-        right:px;
-        position:relative;
+        position: relative;
+        float: left;
+        right:auto;
+        display:none;
     }
-    nav ul {
-        display: none;
-        position:relative;
-        right:1px;
+    nav button{
+    position:relative;
+    float:right;
     }
-    nav span {
-        width:0px;
-        height:0px;
-        border:0px;
-        background-color:white;
-        display:inline-block;
-        text-align:center;
+    nav span a {
+        float: left;
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
     }
-    nav span::before{
-        content: url(../images/threelines.png);
-        max-width: 1em;
-        max-height: 1em;
-        width:1px;
-        height:1px;
+    nav span a:hover{
+        background-color:aqua;
+        color:black;
     }
-     nav span:hover ul{
-        display:inline-block;
+    nav span ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
     }
-    nav span:active ul{
-         display:inline-block;
-    }
+.navigation.responsive {
+    display:block;
+}
     main {
         text-align:center;
         background-color: white;
@@ -53,7 +55,6 @@ header {
         display: block;
         position:relative;
         top:5px;
-        right:px;
         text-align: center;
     }
     #main-image{
@@ -72,7 +73,7 @@ header {
         position:relative;
        top: 10%; 
     }
-    #franklin-photo{
+    #franklin-photo *{
         min-width:5em;
         height:10em;
     }
