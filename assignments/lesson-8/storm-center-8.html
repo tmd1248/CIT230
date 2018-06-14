@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> Franklin City Weather </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Watch Franklin City Forecast!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-8-storm.css">
+    <link rel="stylesheet" href="css/medium-8-storm.css">
+    <link rel="stylesheet" href="css/large-8-storm.css">
+</head>
+<body>
+
+  <header>
+      <h1 id="title"> Weather Watch!</h1>
+            <img id ="main-image" src=images/main-image.png alt="our logo">
+      <H2 id="motto"> "Always Watching Over You"</H2>
+  </header>
+
+  <nav>
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+           </span>
+  </nav>
+    <br>
+    <br>
+  <main>
+      <form>
+           <br> <p>Your Name Here</p> <input type="text" name="fullname" minlength="5" pattern="A-Za-z" required> <br>
+        <p> Input your Email </p><input type="email" name="email" placeholder="example@email.com"><br>
+          <p> input your phone number</p> <input type="tel" name="telephone" required> <br>
+          <p> Input your Zip Code</p> <input type="number" name="zipnumber" required><br>
+          <p> Date of the Storm</p> <input type="date" name="currentdate"><br>
+          <p> What type of Storm is it?</p> <input list="storm" name="stormtype"> <br>
+          <datalist id="storm"> <option value="Flash Flood"> <option value="hail"> <option value="hurricane"> <option value="Thunderstorm"> <option value="Tornado"> </datalist><br>
+          <p>Rate the Storm Severity</p> <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+          <p> What region is this storm in?</p> <input type="select"> <br>
+          <p> Are you in danger?</p> <input type="radio" name="indanger" value="yes" checked value="no"> yes<br> <input type="radio" value="maybe"> maybe <br> <input type="radio" value="no"> no <br>
+          <p> Additional Comments Here</p> <input type="textarea" name="comments"><br>
+          <p> Click Submit When Ready </p> <input type="submit" name="submit">
+      </form>
+    </main>
+  <footer>
+    <section class="contact">
+        999.999.9999<br>
+        123 Main St. Anytown, US 99999<br>
+        Google Map<br><br>
+        &copy;2018 | All Rights Reserved | Weather Watch | <span id="currentDate"></span>
+    </section>
+  </footer>
+        <script type="text/javascript" src="js/currentdate.js"></script>
+        <script type="text/javascript" src="js/hamburger.js"></script>
+        <script type="text/javascript" src="js/adjustrating.js"></script>
+</body>
+</html>
