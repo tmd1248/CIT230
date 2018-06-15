@@ -47,20 +47,15 @@ li {
     display:flex;
 }
     main {
-        text-align:center;
+        text-align:left;
+        font-weight:bold;
         background-color: white;
     }
-.labels { 
-    width: 40px; 
-    text-align:right;
-}
-input {
-    margin: 5px 20px; 
-    font-size:.8em; 
-    color: #3377bb; 
-    padding: .5rem; 
-}
- 
+    #citytitle{
+        position:relative;
+        top:5px;
+        text-align: center;
+    }
     #main-image{
         width: 5em;
         height: 5em;
@@ -77,9 +72,25 @@ input {
         position:relative;
        top: 10%; 
     }
+    #franklin-photo *{
+        min-width:5em;
+        height:10em;
+    }
+    main section.forecast{
+        display: none;
+    }
+    #sunny-image {
+        width: 2em;
+        position:relative;
+    }
+        main figure { margin: 0 0 .2rem 2%; width:96%; }
+    #firephoto {
+        width: 300px;
+    }
+
     footer {
         text-align: center;
-        position:relative;
+        position:absolute;
         bottom: 0%;
         width:100%;
         color:white;

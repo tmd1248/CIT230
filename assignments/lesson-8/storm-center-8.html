@@ -34,20 +34,33 @@
     <br>
     <br>
   <main>
-      <form>
-           <br> <p>Your Name Here</p> <input type="text" name="fullname" minlength="5" pattern="A-Za-z" required> <br>
-        <p> Input your Email </p><input type="email" name="email" placeholder="example@email.com"><br>
-          <p> input your phone number</p> <input type="tel" name="telephone" required> <br>
-          <p> Input your Zip Code</p> <input type="number" name="zipnumber" required><br>
-          <p> Date of the Storm</p> <input type="date" name="currentdate"><br>
-          <p> What type of Storm is it?</p> <input list="storm" name="stormtype"> <br>
-          <datalist id="storm"> <option value="Flash Flood"> <option value="hail"> <option value="hurricane"> <option value="Thunderstorm"> <option value="Tornado"> </datalist><br>
-          <p>Rate the Storm Severity</p> <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+      <form method="get" action="thanks.html">
+           <br> <label for="fullname">Your Name Here</label> <input type="text" name="fullname" minlength="5" pattern=".{5,}" title="Must be 5 or more characters" required> <br>
+          <label for="email" class="labels"> Input your Email </label><input type="email" name="email" placeholder="example@email.com"><br>
+          <label for="telephone" class="labels"> input your phone number</label> <input type="tel" name="telephone" required> <br>
+          <label for="zipnumber" class="labels"> Input your Zip Code</label> <input type="number" name="zipnumber" required><br>
+          <label for="currentdate" class="labels"> Date of the Storm</label> <input type="date" name="currentdate"><br>
+          <label for="stormtype" class="labels"> What type of Storm is it?</label> <input list="storm" name="stormtype"> <br>
+          <datalist id="storm"> 
+              <option value="Flash Flood"> 
+              <option value="hail"> 
+              <option value="hurricane"> 
+              <option value="Thunderstorm"> 
+              <option value="Tornado"> 
+          </datalist><br>
+          <label for="rating" class="labels">Rate the Storm Severity</label> <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		<span id="ratingvalue">5</span><br>
-          <p> What region is this storm in?</p> <input type="select"> <br>
-          <p> Are you in danger?</p> <input type="radio" name="indanger" value="yes" checked value="no"> yes<br> <input type="radio" value="maybe"> maybe <br> <input type="radio" value="no"> no <br>
-          <p> Additional Comments Here</p> <input type="textarea" name="comments"><br>
-          <p> Click Submit When Ready </p> <input type="submit" name="submit">
+          <label for="region" class="labels"> What region is this storm in?</label> <select name="region"> 
+          <option value="none selected" selected disabled> Select an Option...</option>
+          <option value="Franklin"> Franklin</option>
+          <option value="Greenville"> Greenville</option>
+          <option value="Sprinfield"> Springfield</option>
+          </select> <br>
+			<label for="indanger" class="labels"> Are you Personally in danger? </label> <br><input type="radio" name="indanger" value="Yes" checked> Yes<br>
+			<input type="radio" name="indanger" value="Maybe"> Maybe <br>
+			<input type="radio" name="indanger" value="No"> No <br>
+          <label for="comments" class="labels"> Additional Comments Here</label> <textarea name="comments" rows="4" cols="50"></textarea><br>
+          <label for="submit" class="labels"> Click Submit When Ready </label> <input type="submit" name="submit">
       </form>
     </main>
   <footer>
