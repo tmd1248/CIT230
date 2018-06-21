@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> Franklin City Weather </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Watch Franklin City Forecast!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-8-storm.css">
+    <link rel="stylesheet" href="css/medium-8-storm.css">
+    <link rel="stylesheet" href="css/large-8-storm.css">
+</head>
+<body>
+
+  <header>
+      <h1 id="title"> Weather Watch!</h1>
+            <img id ="main-image" src=images/main-image.png alt="our logo">
+      <H2 id="motto"> "Always Watching Over You"</H2>
+  </header>
+
+  <nav>
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-9.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+           </span>
+  </nav>
+    <br>
+    <br>
+  <main>
+      <form method="get" action="thanks.html">
+           <br> <label for="fullname">Your Name Here</label> <input type="text" name="fullname" minlength="5" pattern=".{5,}" title="Must be 5 or more characters" required> <br>
+          <label for="email" class="labels"> Input your Email </label><input type="email" name="email" placeholder="example@email.com"><br>
+          <label for="telephone" class="labels"> input your phone number</label> <input type="tel" name="telephone" required> <br>
+          <label for="zipnumber" class="labels"> Input your Zip Code</label> <input type="number" name="zipnumber" required><br>
+          <label for="currentdate" class="labels"> Date of the Storm</label> <input type="date" name="currentdate"><br>
+          <label for="stormtype" class="labels"> What type of Storm is it?</label> <input list="storm" name="stormtype"> <br>
+          <datalist id="storm"> 
+              <option value="Flash Flood"> 
+              <option value="hail"> 
+              <option value="hurricane"> 
+              <option value="Thunderstorm"> 
+              <option value="Tornado"> 
+          </datalist><br>
+          <label for="rating" class="labels">Rate the Storm Severity</label> <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+          <label for="region" class="labels"> What region is this storm in?</label> <select name="region"> 
+          <option value="none selected" selected disabled> Select an Option...</option>
+          <option value="Franklin"> Franklin</option>
+          <option value="Greenville"> Greenville</option>
+          <option value="Sprinfield"> Springfield</option>
+          </select> <br>
+			<label for="indanger" class="labels"> Are you Personally in danger? </label> <br><input type="radio" name="indanger" value="Yes" checked> Yes<br>
+			<input type="radio" name="indanger" value="Maybe"> Maybe <br>
+			<input type="radio" name="indanger" value="No"> No <br>
+          <label for="comments" class="labels"> Additional Comments Here</label> <textarea name="comments" rows="4" cols="50"></textarea><br>
+          <label for="submit" class="labels"> Click Submit When Ready </label> <input type="submit" name="submit">
+      </form>
+    </main>
+  <footer>
+    <section class="contact">
+        999.999.9999<br>
+        123 Main St. Anytown, US 99999<br>
+        Google Map<br><br>
+        &copy;2018 | All Rights Reserved | Weather Watch | <span id="currentDate"></span>
+    </section>
+  </footer>
+        <script type="text/javascript" src="js/currentdate.js"></script>
+        <script type="text/javascript" src="js/hamburger.js"></script>
+        <script type="text/javascript" src="js/adjustrating.js"></script>
+</body>
+</html>

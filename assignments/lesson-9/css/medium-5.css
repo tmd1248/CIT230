@@ -1,0 +1,38 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+   
+    
+    main section.forecast { 
+        display: inline-flex;
+    }  /* show the 10-day forecast with the medium view and up */
+    #franklin-photo {
+        float:right;
+        width:40%;
+        height: 200px;
+    }
+    nav span{
+        display:inline-flex;
+    }
+    nav button {
+        display:none;
+    }
+    #firephoto {
+        display:inline-flex;
+        width: 40%;
+        position:absolute;
+        bottom: -100px;
+        float: right;
+    }
+    #town-article{
+        display: flex;
+        width:40%;
+        float: left;
+    }
+    	.hamburger { display: none;	}
+}
+footer {
+    display:inline-flex;
+    justify-content:center;
+}
