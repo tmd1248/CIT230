@@ -45,19 +45,20 @@
     </figure>
     <section class="weather-summary">
       <h3>Weather Summary</h3>    
+        <section class="currenttemp"> 
+        <p> Current Temperature: <span id="tempspan"></span> &deg;F</p>
+        </section>
       <section class="highlow">
-          <p>High:<span id="high">90</span>ºF</p>  
-          <p>Low:<span id="low">66</span>°F</p>  
+          <p>High:<span id="high"></span>ºF</p>  
+          <p>Low:<span id="low"></span>°F</p>  
       </section>
       <section class="current">
-        Sunny
-        <picture>
-            <img id="sunny-image" src="images/sunpicture.jpg" alt="Nice and Sunny!">
-        </picture>
+          <p> Current conditions are:  <span id="conditionspan"> </span> <span id="iconspan"></span></p>
+        
       </section>   
       <section class="conditions">
-        <p>Precipitation: 0&percnt;</p>  <br>
-          <p>Wind Speed:<span id="windspeed">5</span> mph SW</p>
+          <p>Precipitation:<span id="precipSpan"> </span>&percnt;</p>  <br>
+          <p>Wind Speed:<span id="windspeed"></span> mph SW</p>
         <p> Wind Chill: <span id="windchillspan"> </span>  ºF</p>
       </section>           
     </section>
@@ -81,16 +82,16 @@
 	</thead>
         <tbody>  
           <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
+              <td><span id="1"></span>&deg;F</td>
+              <td><span id="2"></span>&deg;F</td>
+            <td><span id="3"></span>&deg;F</td>
+            <td><span id="4"></span>&deg;F</td>
+            <td><span id="5"></span>&deg;F</td>
+            <td><span id="6"></span>&deg;F</td>
+            <td><span id="7"></span>&deg;F</td>
+            <td><span id="8"></span>&deg;F</td>
+            <td><span id="9"></span>&deg;F</td>
+            <td><span id="10"></span>&deg;F</td>
           </tr>
             
             
@@ -113,12 +114,13 @@
     <section class="contact">
         999.999.9999<br>
         123 Main St. Anytown, US 99999<br>
-        Google Map<br><br>
+        Google Map<br>
+        Weather Data Provided by <a href="https://openweathermap.org/">OpenWeatherMap</a> <br> <br>
         &copy;2018 | All Rights Reserved | Weather Watch | <span id="currentDate"></span>
     </section>
   </footer>
         <script type="text/javascript" src="js/currentdate.js"></script>
         <script type="text/javascript" src="js/hamburger.js"></script>
-        <script type="text/javascript" src="js/windchill.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
 </body>
 </html>

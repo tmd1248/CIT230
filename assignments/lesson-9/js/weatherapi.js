@@ -6,4 +6,5 @@ weatherRequest.onload = function() {
     var weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
     document.getElementById("tempspan").innerHTML=weatherData.list[0].main.temp;
+
 }

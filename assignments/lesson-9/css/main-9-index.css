@@ -24,6 +24,11 @@ li {
     position:relative;
     float:right;
     }
+    #citytitle{
+        position:relative;
+        top:5px;
+        text-align: center;
+}
     nav span a {
         float: left;
         color: blue;
@@ -71,22 +76,23 @@ li {
         position:relative;
        top: 10%; 
     }
-    #franklin-photo *{
-        min-width:5em;
-        height:10em;
-    }
-    main section.forecast{
+    .towndata{
         display: none;
     }
-    #sunny-image {
-        width: 2em;
-        position:relative;
-    }
         main figure { margin: 0 0 .2rem 2%; width:96%; }
-    #firephoto {
-        width: 300px;
-    }
+#weatherstory {
+    border: 5px solid black;
+    position:relative;
+}
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+    max-width:30em;
+}
 
+img[data-src] {
+  opacity: 0;
+}
     footer {
         text-align: center;
         position:relative;
@@ -95,9 +101,3 @@ li {
         color:white;
         background-color:blue;
     }
-footer a {
-    color:yellow;
-}
-footer a:visited {
-    color:darkviolet;
-}
