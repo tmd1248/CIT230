@@ -25,8 +25,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .towndata img {
-        max-width:30em;
-        max-height:12em;
+        max-width:100%
         
     }
     nav button {
