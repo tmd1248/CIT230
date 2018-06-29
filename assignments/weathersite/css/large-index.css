@@ -1,0 +1,5 @@
+@media only screen and (min-width: 64em ) {
+    .towndata img {
+        max-width:35em;
+    }
+}

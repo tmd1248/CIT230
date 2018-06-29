@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> Franklin City Weather </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Watch Franklin City Forecast!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-storm.css">
+    <link rel="stylesheet" href="css/medium-storm.css">
+    <link rel="stylesheet" href="css/large-storm.css">
+</head>
+<body>
+
+   <header includefile="modules/header.html">
+  </header>
+
+ <nav includefile="modules/nav.html">
+
+  </nav>
+    <br>
+    <br>
+  <main>
+      <form method="get" action="thanks.html">
+           <br> <label>Your Name Here</label> <input type="text" name="fullname" minlength="5" pattern=".{5,}" title="Must be 5 or more characters" required> <br>
+          <label class="labels"> Input your Email </label><input type="email" name="email" placeholder="example@email.com"><br>
+          <label class="labels"> input your phone number</label> <input type="tel" name="telephone" required> <br>
+          <label class="labels"> Input your Zip Code</label> <input type="number" name="zipnumber" required><br>
+          <label class="labels"> Date of the Storm</label> <input type="date" name="currentdate"><br>
+          <label class="labels"> What type of Storm is it?</label> <input list="storm" name="stormtype"> <br>
+          <datalist id="storm"> 
+              <option value="Flash Flood"> 
+              <option value="hail"> 
+              <option value="hurricane"> 
+              <option value="Thunderstorm"> 
+              <option value="Tornado"> 
+          </datalist><br>
+          <label class="labels">Rate the Storm Severity</label> <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+          <label class="labels"> What region is this storm in?</label> <select name="region"> 
+          <option value="none selected" selected disabled> Select an Option...</option>
+          <option value="Franklin"> Franklin</option>
+          <option value="Greenville"> Greenville</option>
+          <option value="Sprinfield"> Springfield</option>
+          </select> <br>
+			<label class="labels"> Are you Personally in danger? </label> <br><input type="radio" name="indanger" value="Yes" checked> Yes<br>
+			<input type="radio" name="indanger" value="Maybe"> Maybe <br>
+			<input type="radio" name="indanger" value="No"> No <br>
+          <label class="labels"> Additional Comments Here</label> <textarea name="comments" rows="4" cols="50"></textarea><br>
+          <label class="labels"> Click Submit When Ready </label> <input type="submit" name="submit">
+      </form>
+    </main>
+  <footer includefile="modules/footer.html">
+
+  </footer>
+        <script type="text/javascript" src="js/currentdate.js"></script>
+        <script type="text/javascript" src="js/hamburger.js"></script>
+        <script type="text/javascript" src="js/adjustrating.js"></script>
+            <script type="text/javascript" src="js/include.js"></script>
+            <script type="text/javascript" src="js/wayfinding.js"></script>
+</body>
+</html>

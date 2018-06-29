@@ -1,0 +1,39 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+   
+    
+    .towndata { 
+        display:inline-flex;
+    } 
+    #weatherstory {
+        border:none;
+    }
+    #wrappinggrid {
+        display:grid;
+        grid-template-columns: 1fr
+    }
+    nav span{
+        display:inline-flex;
+    }
+    #storyimage {
+        max-width:30em;
+    }
+    .towndata grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .towndata img {
+        max-width:100%
+        
+    }
+    nav button {
+        display:none;
+    }
+    	.hamburger { display: none;	}
+}
+footer {
+    display:inline-flex;
+    justify-content:center;
+}

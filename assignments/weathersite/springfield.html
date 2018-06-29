@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> Springfield City Weather </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Watch Springfield City Forecast!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-towns.css">
+    <link rel="stylesheet" href="css/medium-towns.css">
+    <link rel="stylesheet" href="css/large-towns.css">
+</head>
+<body>
+
+  <header includefile="modules/header.html">
+  </header>
+
+  <nav includefile="modules/nav.html">
+
+  </nav>
+    
+  <main>
+    <section>
+            <h2 id="citytitle"> <br> Springfield City</h2>
+    </section>
+    <figure>
+        <picture id="franklin-photo">
+        <source media="(min-width: 64em)" srcset="images/franklin-compressed.jpg">
+        <source media="(min-width: 37.5em) " srcset="images/franklin-compressed-medium.jpg">
+        <img src="images/franklin-compressed-small.jpg" alt="Still Sunny!">
+        </picture> 
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+        <section class="currenttemp"> 
+        <p> Current Temperature: <span id="tempspan"></span> &deg;F</p>
+        </section>
+      <section class="highlow">
+          <p>High:<span id="high"></span>ºF</p>  
+          <p>Low:<span id="low"></span>°F</p>  
+      </section>
+      <section class="current">
+          <p> Current conditions are:  <span id="conditionspan"> </span> <span id="iconspan"></span></p>
+        
+      </section>   
+      <section class="conditions">
+          <p>Precipitation:<span id="precipSpan"> </span>&percnt;</p>  <br>
+          <p>Wind Speed:<span id="windspeed"></span> mph SW</p>
+        <p> Wind Chill: <span id="windchillspan"> </span>  ºF</p>
+      </section>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+              <td><span id="1"></span>&deg;F</td>
+              <td><span id="2"></span>&deg;F</td>
+            <td><span id="3"></span>&deg;F</td>
+            <td><span id="4"></span>&deg;F</td>
+            <td><span id="5"></span>&deg;F</td>
+            <td><span id="6"></span>&deg;F</td>
+            <td><span id="7"></span>&deg;F</td>
+            <td><span id="8"></span>&deg;F</td>
+            <td><span id="9"></span>&deg;F</td>
+            <td><span id="10"></span>&deg;F</td>
+          </tr>
+            
+            
+	   </tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Its rainy out!</h3>	
+      <img id="firephoto" src="images/pexels-photo.jpeg" alt="Rain keeps coming down">
+      <section id="town-article">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at justo venenatis, consectetur justo eu, rutrum justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales posuere ligula nec congue. Curabitur a orci et ex convallis consectetur. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean auctor dapibus felis at condimentum. Suspendisse potenti. In sollicitudin elit nec augue mattis sollicitudin. Quisque semper justo vitae metus volutpat, non egestas est fringilla. Suspendisse ac purus leo. Ut elementum arcu eu purus dictum tristique. Suspendisse euismod vehicula lectus, rutrum finibus lectus. Sed ut nibh lacus. Suspendisse sit amet erat ut nibh viverra dictum nec et felis</p>
+        </section>
+    </article>		  
+  
+  </main>
+    
+  <footer includefile="modules/footer.html">
+      
+      
+
+  </footer>
+
+        <script type="text/javascript" src="js/hamburger.js"></script>
+            <script type="text/javascript" src="js/wayfinding.js"></script>
+        <script type="text/javascript" src="js/springfieldweather.js"></script>
+        <script type="text/javascript" src="js/include.js"></script>
+      <script type="text/javascript" src="js/currentdate.js"></script>
+</body>
+</html>

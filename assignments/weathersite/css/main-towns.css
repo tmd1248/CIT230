@@ -1,0 +1,106 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+p {
+    display: inline-flex;
+}
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 95%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+header {
+    font-family: 'Bowlby One SC', cursive;
+}
+li {
+    display: inline-flex;
+}
+    nav span {
+        position: relative;
+        float: left;
+        right:auto;
+        display:none;
+    }
+    nav button{
+    position:relative;
+    float:right;
+    }
+    nav span a {
+        float: left;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    nav span a:hover{
+        background-color:aqua;
+        color:black;
+    }
+.active {
+    background-color:yellow;
+}
+    nav span ul {
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+    }
+.navigation.responsive {
+    display:flex;
+}
+    main {
+        text-align:center;
+        background-color: white;
+    }
+    #citytitle{
+        position:relative;
+        top:5px;
+        text-align: center;
+    }
+    #main-image{
+        width: 5em;
+        height: 5em;
+        position:relative;    
+    }
+    #title{
+        position:relative;
+        top:10%;
+        color:cornflowerblue;
+    }
+    #motto{
+        display:inline-flex;
+        width:10em;
+        position:relative;
+       top: 10%; 
+    }
+    #franklin-photo *{
+        min-width:5em;
+        height:10em;
+    }
+    main section.forecast{
+        display: none;
+    }
+    #sunny-image {
+        width: 2em;
+        position:relative;
+    }
+        main figure { margin: 0 0 .2rem 2%; width:96%; }
+    #firephoto {
+        width: 300px;
+    }
+
+    footer {
+        text-align: center;
+        position:relative;
+        bottom: 0%;
+        width:100%;
+        color:white;
+        background-color:blue;
+    }
+footer a {
+    color:yellow;
+}
+footer a:visited {
+    color:darkviolet;
+}
