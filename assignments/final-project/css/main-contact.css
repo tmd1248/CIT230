@@ -1,0 +1,68 @@
+body {
+  font-size: 16px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+p {
+    display: inline-flex;
+    max-width:100%;
+}
+header {
+    background-color:yellow;
+    color:red;
+    text-align:center;
+    font-size:32px;
+}
+li {
+    display: inline-flex;
+}
+#logoimage {
+    max-width:20%
+}
+    nav span {
+        position: relative;
+        float: right;
+        display:none;
+        width:100%
+    }
+    nav button{
+    position:relative;
+    float:right;
+    }
+.active {
+    background-color:darkslategray;
+    color:yellow;
+}
+    nav span a {
+        color: dimgrey;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color:lightgrey;
+    }
+    nav span a:hover{
+        background-color:darkslategrey;
+        color:yellow;
+    }
+    nav span ul {
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+    }
+.navigation.responsive {
+    display:flex;
+}
+    main {
+        display: inline-block;
+        position:relative;
+        width:100%;
+        grid-template-columns: 1fr;
+    }
+    footer {
+        text-align: center;
+        position:relative;
+        bottom: 0%;
+        width:100%
+    }

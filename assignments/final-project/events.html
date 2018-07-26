@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> The Mountain Spoke | Events Page </title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Mountain Spoke Events Page!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-events.css">
+    <link rel="stylesheet" href="css/medium-events.css">
+    <link rel="stylesheet" href="css/large-events.css">
+</head>
+<body>
+    <header>
+        <h1>The Mountain Spoke</h1>
+                <picture>
+            <img id="logoimage" src="images/logo.jpg" alt="Our Logo">
+        </picture>
+    </header>
+    <nav>
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
+          <ul>
+            <li> <a href="index.html"> Main Page</a></li>
+            <li> <a href="adventure-tours.html"> Adventure Tours</a></li>
+            <li> <a class="active" href="events.html"> Events</a></li>
+            <li> <a href="sales.html"> Sales</a></li>
+            <li> <a href="service.html"> Services!</a></li>
+        </ul>
+        </span>
+    </nav>
+    <main>
+        <h2>"Cycle the Continental Divide"</h2>
+        <p> Come join the community this saturday July 28th as we bike along the Continental Divide trail! Expect a long day of biking, fun, and sun! bikers of all skill levels who feel they can beat the heat are welcome to join! A competitive race will be held along the trail with a buy in of #30, but even without that fee you can enjoy your time on the trail, seeing the sights, with a whole bunch of other enthusiasts!</p>
+        <h3> Sign Up Here!</h3>
+              <form method="get" action="submitted.html">
+           <br> <label>Your Name Here</label> <input type="text" name="fullname" minlength="5" pattern=".{5,}" title="Must be 5 or more characters" required> <br>
+          <label class="labels"> Input your Email </label><input type="email" name="email" placeholder="example@email.com"><br>
+          <label class="labels"> input your phone number</label> <input type="tel" name="telephone" required> <br>
+            <label class="labels"> What is your date of birth?</label> <input type="date" name="birthdate"> <br>
+            <label class="labels"> What state are you from?</label> <input type="text" name="state" required> <br>
+            <label class="labels"> Any Comments?</label><textarea name="comments" rows="4" cols="50"></textarea><br>
+          <label class="labels"> Click Submit When Ready </label> <input type="submit" name="submit">
+        </form>
+    </main>
+    <footer>
+        <p><a href="contact.html"> Contact us!</a></p>
+        <p> <a href="video.html"> My Video</a></p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lazyloading.js"></script>
+    <script src="js/wayfinding.js"></script>
+</body>

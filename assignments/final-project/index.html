@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> The Mountain Spoke </title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Mountain Spoke Home Page!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-index.css">
+    <link rel="stylesheet" href="css/medium-index.css">
+    <link rel="stylesheet" href="css/large-index.css">
+</head>
+<body>
+    <header>
+                <picture>
+            <img id="logoimage" src="images/logo.jpg" alt="Our Logo">
+        </picture>
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
+          <ul>
+            <li> <a class="active" href="index.html"> Main Page</a></li>
+            <li> <a href="adventure-tours.html"> Adventure Tours</a></li>
+            <li> <a href="events.html"> Events</a></li>
+            <li> <a href="sales.html"> Sales</a></li>
+            <li> <a href="service.html"> Services!</a></li>
+        </ul>
+        </span>
+    </nav>
+    <main>
+        <section class="yellow">
+            <picture>
+            <a href="sales.html">
+            <img class="left" data-src="images/bike-image.jpg" alt="One of our many models!">
+                </a>
+            </picture>
+            <h2> Try these new models today!</h2>
+            <p>exciting adventures await on one of our new mountain bikes!</p>
+        </section>
+        <section class="black">
+            <picture>
+                <a href="adventure-tours.html">
+                    <img class="right" data-src="images/montana-image.jpg" alt="the mountains await!">
+                </a>
+            </picture>
+            <h2> Adventure Awaits in the wonderful land of Montana!</h2>
+            <p>Find wonderful opportunities to adventure out into our wilderness!</p>
+        </section>
+        <section class="yellow">
+            <picture>
+                <a href="events.html">
+                    <img src="images/events-image.jpg" alt="see people like us!">
+                </a>
+            </picture>
+            <h2>Our Current Events!</h2>
+            <p>Meet people! enjoy the wildlands! all of this and more
+                are <br/>available here! </p>
+        </section>
+        <section class="black">
+            <picture>
+                <a href="service.html">
+                    <img class="right" data-src="images/service-image.jpg" alt="Our workshop!">
+                </a>
+            </picture>
+            <h2>Need a bike repaired? we can help!</h2>
+            <p>Our talented team of bike repair specialists is here to help you get <br/> back onto the road fast!</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p><a href="contact.html"> Contact us!</a></p>
+        <p> <a href="video.html"> My Video</a></p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lazyloading.js"></script>
+    <script src="js/wayfinding.js"></script>
+</body>

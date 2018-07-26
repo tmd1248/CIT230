@@ -1,0 +1,95 @@
+body {
+  font-size: 16px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+p {
+    display: inline-flex;
+    max-width:100%;
+}
+header {
+    background-color:#ffff00;
+    color:red;
+    text-align:center;
+    font-size:32px;
+}
+li {
+    display: inline-flex;
+}
+#logoimage {
+    max-width:20%
+}
+    nav span {
+        position: relative;
+        float: right;
+        display:none;
+        width:100%
+    }
+    nav button{
+    position:relative;
+    float:right;
+    }
+.active {
+    background-color:darkslategray;
+    color:yellow;
+}
+    nav span a {
+        color: dimgrey;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color:lightgrey;
+    }
+    nav span a:hover{
+        background-color:darkslategrey;
+        color:yellow;
+    }
+    nav span ul {
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+    }
+.navigation.responsive {
+    display:flex;
+}
+.bikestuff {
+	position: relative;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	text-shadow:0px 0px 1px rgba(0,0,0,0.2);
+	list-style: none;
+	top: 70px;
+	height: 97px;
+}
+
+.bikestuff > li {
+	position: relative;
+	background: rgba(0,0,0,0.2);
+	width: 150px;
+	height: 40px;
+	padding: 20px;
+	margin-top: 2px;
+	left: -188px;
+	border-right: 50px solid yellow;
+	-webkit-transition: left 500ms;
+	   -moz-transition: left 500ms;
+	    -ms-transition: left 500ms;
+	     -o-transition: left 500ms;
+	        transition: left 500ms;
+}
+.salesimg {
+    width:60px;
+}
+
+li.openSesame {
+	left:0px;
+}
+    footer {
+        text-align: center;
+        position:fixed;
+        bottom: 0%;
+        width:100%
+    }

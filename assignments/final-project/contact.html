@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <title> The Mountain Spoke | Contact Us </title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Mountain Spoke Contact Page!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-contact.css">
+    <link rel="stylesheet" href="css/medium-contact.css">
+    <link rel="stylesheet" href="css/large-contact.css">
+</head>
+<body>
+    <header>
+        <h1>The Mountain Spoke</h1>
+                <picture>
+            <img id="logoimage" src="images/logo.jpg" alt="Our Logo">
+        </picture>
+    </header>
+    <nav>
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      <span class="navigation">
+          <ul>
+            <li> <a href="index.html"> Main Page</a></li>
+            <li> <a href="adventure-tours.html"> Adventure Tours</a></li>
+            <li> <a href="events.html"> Events</a></li>
+            <li> <a href="sales.html"> Sales</a></li>
+            <li> <a href="service.html"> Services!</a></li>
+        </ul>
+        </span>
+    </nav>
+    <main>
+        <h2> Contact Us!</h2>
+        <p>The Mountain Spoke is located at 3950 Valley Commons Drive, Bozeman, MT. We are open six days a week, and our hours are 7-7 on weekdays and 7-10 saturdays. </p>
+        <p> <a href="https://goo.gl/maps/6HEhZKxwqcS2"> See us on google map here! </a></p>
+        <p> If you have more specific questions, submit them here!</p>
+        <form method="get" action="submitted.html">
+            <label>What is your username?</label><input type="text" required name="username"><br>
+            <label>What is your email?</label><input type="email" name="email" required> <br>
+            <label>What questions or comments do you have?</label><textarea name="comments" rows="4" cols="50"></textarea><br>
+          <label class="labels"> Click Submit When Ready </label> <input type="submit" name="submit">
+        </form>
+    </main>
+    <footer>
+        <p><a href="contact.html"> Contact us!</a></p>
+        <p> <a href="video.html"> My Video</a></p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lazyloading.js"></script>
+    <script src="js/wayfinding.js"></script>
+</body>
